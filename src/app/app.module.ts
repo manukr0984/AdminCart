@@ -12,7 +12,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { HeaderComponent } from './header/header.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatIconModule, MatToolbarModule, MatInputModule, MatCardModule} from '@angular/material';
+import {MatButtonModule, MatIconModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule} from '@angular/material';
 
 const appRoutes: Routes = [
   {
@@ -53,7 +53,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,FlexLayoutModule,
-    HttpClientModule, MatButtonModule, MatIconModule, MatToolbarModule, MatInputModule,MatCardModule,
+    HttpClientModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatToolbarModule, MatInputModule,MatCardModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

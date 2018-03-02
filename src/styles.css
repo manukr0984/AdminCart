@@ -9,6 +9,7 @@ label {
     html, body{
         font-family: 'Roboto', sans-serif;
         height: 100%;
+        font: bold;
     }
     body{
         margin: 0;

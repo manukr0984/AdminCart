@@ -1,7 +1,5 @@
-<h1 fxLayout fxLayoutAlign="center">Add New Product</h1>
-<div class="container" fxLayout fxLayoutAlign="center">
-  <div class="row">
-    <div class="col-md-6">
+
+<div class="container" fxLayout fxLayoutAlign="center" fxFlex="500px">
       <form (ngSubmit)="saveProduct()" #productForm="ngForm">
         <div class="form-group">
             <mat-form-field class="example-full-width">
@@ -13,20 +11,19 @@
               <input matInput placeholder="Title" type="text" class="form-control" [(ngModel)]="product.title" name="title" required>
             </mat-form-field>         
         </div>
-
+        <div class="form-group"  class="example-full-width">
           <mat-form-field>
               <textarea matInput placeholder="Description" matTextareaAutosize matAutosizeMinRows="5"
                         matAutosizeMaxRows="15" type="text" class="form-control" [(ngModel)]="product.description" name="description" required></textarea>
             </mat-form-field>
+          </div>
         <div class="form-group">
             <mat-form-field class="example-full-width">
                 <input matInput placeholder="Price" type="number" class="form-control" [(ngModel)]="product.price" name="price" required>
               </mat-form-field>         
           </div>
-        <div class="form-group">
-            <button mat-raised-button color="accent" type="submit" [disabled]="!productForm.form.valid">Save Product</button>
+        <div class="form-group" class="example-full-width">
+            <button mat-raised-button color="accent" type="submit" [disabled]="!productForm.form.valid">Add Product</button>
         </div>
       </form>
     </div>
-  </div>
-</div>
