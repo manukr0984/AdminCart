@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatIconModule, MatToolbarModule, MatInputModule, MatCardModule} from '@angular/material';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const appRoutes: Routes = [
   {
@@ -60,7 +59,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [provide: LocationStrategy, useClass: HashLocationStrategy],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
