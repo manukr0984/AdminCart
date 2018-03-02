@@ -1,1 +1,1 @@
-web: ng build && node ./bin/www
+web: ng build --aot -prod && node ./bin/www
