@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>{{ product.title }}</h1>
+  <dl class="list">
+    <dd><img src="{{ product.imagePath }}" class="img-responsive"></dd>
+    <hr>
+    <dt>Description</dt>
+    <dd>{{ product.description }}</dd>
+    <hr>
+    <dt>Price</dt>
+    <dd>${{ product.price }}</dd>
+    <hr>
+  </dl>
+  <div class="row">
+      <div class="col-md-12">
+        <a [routerLink]="['/product-edit', product._id]" class="btn btn-success">Update Product</a>
+        <button class="btn btn-danger" type="button" (click)="deleteProduct(product._id)">Delete Product</button>
+      </div>
+    </div>
+</div>
